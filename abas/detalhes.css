@@ -1,0 +1,264 @@
+.pagina-detalhes {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top center, rgba(255, 255, 255, 0.05), transparent 35%),
+    linear-gradient(180deg, #050505 0%, #040404 100%);
+}
+
+.secao-detalhes {
+  padding: 150px 0 90px;
+}
+
+.caixa-sem-agendamento {
+  max-width: 600px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.caixa-sem-agendamento h1 {
+  font-size: 2.6rem;
+  margin-bottom: 14px;
+  color: #f5f5f7;
+}
+
+.caixa-sem-agendamento p {
+  color: rgba(255,255,255,0.62);
+  margin-bottom: 24px;
+}
+
+.topo-detalhes {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 50px;
+}
+
+.titulo-detalhes {
+  font-size: 3.3rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  color: #f5f5f7;
+  margin-bottom: 14px;
+}
+
+.subtitulo-detalhes {
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.conteudo-detalhes {
+  max-width: 940px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr;
+  gap: 22px;
+}
+
+.card-principal,
+.card-lateral {
+  background: rgba(10, 10, 10, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.card-principal {
+  border-radius: 30px;
+  padding: 28px 30px 26px;
+  min-height: 305px;
+}
+
+.linha-topo-card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.status-agendamento {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  color: #f5f5f7;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.icone-status {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone-status .material-icons {
+  color: #f5f5f7;
+  font-size: 24px;
+}
+
+.nome-cliente {
+  font-size: 1.15rem;
+  color: #f5f5f7;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.modelo-dispositivo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,0.68);
+  font-size: 0.92rem;
+}
+
+.icone-dispositivo {
+  font-size: 16px;
+}
+
+.dados-contato {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.linha-contato {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.58);
+  line-height: 1.4;
+}
+
+.linha-divisoria {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+  margin: 40px 0 24px;
+}
+
+.infos-card {
+  display: flex;
+  gap: 40px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rotulo-info {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgba(255,255,255,0.52);
+  font-weight: 700;
+}
+
+.info-item strong {
+  color: #f5f5f7;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.cards-laterais {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.card-lateral {
+  border-radius: 28px;
+  min-height: 142px;
+  padding: 28px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone-lateral {
+  font-size: 28px;
+  color: #f5f5f7;
+  margin-bottom: 12px;
+}
+
+.card-lateral strong {
+  color: #f5f5f7;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.card-lateral p {
+  color: rgba(255,255,255,0.62);
+  font-size: 0.92rem;
+}
+
+.botoes-detalhes {
+  max-width: 940px;
+  margin: 28px auto 0;
+  display: flex;
+  gap: 12px;
+}
+
+.botao-voltar,
+.botao-cancelar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  height: 42px;
+  padding: 0 24px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: 0.25s;
+}
+
+.botao-voltar {
+  background: #f5f5f7;
+  color: #111111;
+}
+
+.botao-voltar:hover {
+  background: #ffffff;
+}
+
+.botao-cancelar {
+  background: transparent;
+  color: #f5f5f7;
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+.botao-cancelar:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.rodape {
+  margin-top: 70px;
+}
+
+.rodape-direita a {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+@media (max-width: 900px) {
+  .conteudo-detalhes {
+    grid-template-columns: 1fr;
+  }
+
+  .botoes-detalhes {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,76 @@
+.pagina-cancelar {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top center, rgba(255,255,255,0.05), transparent 35%),
+    linear-gradient(180deg, #050505 0%, #040404 100%);
+}
+
+.secao-cancelar {
+  padding: 190px 0 90px;
+  text-align: center;
+}
+
+.titulo-cancelar {
+  font-size: 3.2rem;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  color: #f5f5f7;
+  margin-bottom: 42px;
+}
+
+.caixa-cancelar {
+  max-width: 700px;
+  margin: 0 auto 28px;
+  padding: 42px 28px;
+  border-radius: 30px;
+  background: rgba(10, 10, 10, 0.92);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.caixa-cancelar h2 {
+  font-size: 1.2rem;
+  color: #f5f5f7;
+}
+
+.botoes-cancelar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.botao-sim,
+.botao-nao {
+  min-width: 120px;
+  height: 42px;
+  padding: 0 22px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.botao-sim {
+  border: none;
+  background: #f5f5f7;
+  color: #111;
+  cursor: pointer;
+}
+
+.botao-nao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #f5f5f7;
+  border: 1px solid rgba(255,255,255,0.35);
+}
+
+.botao-nao:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+@media (max-width: 1024px) {
+  .titulo-cancelar {
+    font-size: 2.2rem; 
+  }
+}
