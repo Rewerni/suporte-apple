@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendar atendimento | Suporte Apple BR</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="agendamento.css">
+</head>
+<body data-pagina="agendamento">
+
+  <header class="cabecalho">
+    <div class="centro cabecalho-conteudo">
+      <a href="../index.html" class="logo">Suporte Apple BR</a>
+
+      <nav class="menu">
+        <a href="../index.html">Início</a>
+        <a href="../index.html#servicos">Serviços</a>
+        <a href="./sobre.html">Sobre</a>
+        <a href="./detalhes.html">Meu agendamento</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pagina-agendamento">
+    <section class="secao-agendamento">
+      <div class="centro">
+
+        <div class="topo-agendamento">
+          <p class="mini-titulo-agendamento">Atendimento remoto</p>
+          <h1 class="titulo-agendamento">Agendar atendimento</h1>
+          <p class="subtitulo-agendamento">
+            Escolha o melhor horário para a sua consultoria técnica especializada.
+          </p>
+        </div>
+
+        <div class="caixa-agendamento">
+          <div class="lado-direito-agendamento">
+            <form class="formulario-agendamento" id="form-agendamento">
+
+              <div class="linha-formulario">
+                <div class="grupo-formulario">
+                  <label for="nome">Seu Nome</label>
+                  <input type="text" id="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="grupo-formulario">
+                  <label for="telefone">Telefone (WhatsApp)</label>
+                  <input type="tel" id="telefone" placeholder="(82) 99999-9999" required>
+                </div>
+              </div>
+
+              <div class="linha-formulario">
+                <div class="grupo-formulario">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div class="grupo-formulario">
+                  <label for="dispositivo">Dispositivo</label>
+                  <select id="dispositivo" required>
+                    <option value="">Selecione</option>
+
+                    <optgroup label="iPhone">
+                      <option>iPhone 15</option>
+                      <option>iPhone 15 Plus</option>
+                      <option>iPhone 15 Pro</option>
+                      <option>iPhone 15 Pro Max</option>
+                      <option>iPhone 16</option>
+                      <option>iPhone 16 Plus</option>
+                      <option>iPhone 16 Pro</option>
+                      <option>iPhone 16 Pro Max</option>
+                      <option>iPhone 16e</option>
+                      <option>iPhone 17</option>
+                      <option>iPhone 17 Plus</option>
+                      <option>iPhone 17 Pro</option>
+                      <option>iPhone 17 Pro Max</option>
+                      <option>iPhone 17e</option>
+                      <option>iPhone Air</option>
+                    </optgroup>
+
+                    <optgroup label="iPad">
+                      <option>iPad Pro 11"</option>
+                      <option>iPad Pro 13"</option>
+                      <option>iPad Air</option>
+                      <option>iPad</option>
+                      <option>iPad mini</option>
+                    </optgroup>
+
+                    <optgroup label="MacBook">
+                      <option>MacBook Air 13"</option>
+                      <option>MacBook Air 15"</option>
+                      <option>MacBook Pro 14"</option>
+                      <option>MacBook Pro 16"</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+
+              <div class="linha-formulario">
+                <div class="grupo-formulario">
+                  <label for="suporte">Tipo de suporte</label>
+                  <select id="suporte" required>
+                    <option value="">Selecione</option>
+                    <option>Configuração inicial</option>
+                    <option>Backup / iCloud</option>
+                    <option>Transferência de dados</option>
+                    <option>Suporte geral</option>
+                  </select>
+                </div>
+
+                <div class="grupo-formulario">
+                  <label for="data">Data desejada</label>
+                  <input type="date" id="data" required>
+                </div>
+              </div>
+
+              <div class="linha-formulario linha-unica">
+                <div class="grupo-formulario">
+                  <label for="horario">Horário</label>
+                  <input type="time" id="horario" required>
+                </div>
+              </div>
+
+              <div class="grupo-formulario">
+                <label for="descricao">Descrição do problema</label>
+                <textarea id="descricao" rows="5" placeholder="Descreva rapidamente sua necessidade ou dúvida"></textarea>
+              </div>
+
+              <button type="submit" class="botao-enviar">Confirmar agendamento</button>
+
+            </form>
+          </div>
+        </div>
+
+        <div class="grade-beneficios">
+          <div class="card-beneficio">
+            <span class="material-icons">verified_user</span>
+            <h3>Técnicos Certificados</h3>
+            <p>Especialistas treinados diretamente nos padrões Apple.</p>
+          </div>
+
+          <div class="card-beneficio">
+            <span class="material-icons">bolt</span>
+            <h3>Atendimento Ágil</h3>
+            <p>Priorizamos a solução do seu problema em tempo recorde.</p>
+          </div>
+
+          <div class="card-beneficio">
+            <span class="material-icons">workspace_premium</span>
+            <h3>Garantia Original</h3>
+            <p>Peças genuínas e garantia de serviço premium.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="centro rodape-conteudo">
+      <div class="rodape-esquerda">
+        <h3>Suporte Apple BR</h3>
+        <p>© 2026 Apple Support BR. Todos os direitos reservados.</p>
+      </div>
+
+      <div class="rodape-direita">
+        <a href="#">Termos</a>
+        <a href="#">Privacidade</a>
+        <a href="#">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="fluxo.js"></script>
+</body>
+</html>
